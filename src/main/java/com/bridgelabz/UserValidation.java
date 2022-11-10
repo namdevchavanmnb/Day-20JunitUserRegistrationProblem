@@ -10,6 +10,7 @@ public class UserValidation {
     public static final String PASSWORD_RULE2="^[A-Z]+[a-z]{7,}$";
     public static final String PASSWORD_RULE3="^[A-Z]+[a-z0-9]{7,}$";
     public static final String PASSWORD_RULE4="^[A-Z]+[a-z0-9]{7,}[!@#$%&*]+$";
+    public static final String SEPERATE_EMAIL_ID="^[A-Za-z]{3,}[.+-]?[A-Za-z0-9]*[@]{1}[a-z0-9]{1,}[.]{1}[a-z]{2,}[.]?[a-z]*$";
     public boolean checkFirstName(String firstName) {
         return (Pattern.matches(VALIDATE_NAME, firstName));
     }
@@ -39,6 +40,9 @@ public class UserValidation {
     }
     public Boolean password4(String password3) {
         return (Pattern.matches(PASSWORD_RULE4,password3));
+    }
+    public Boolean checkEmailSeperate(String checkEmailSeperate) {
+        return (Pattern.matches(SEPERATE_EMAIL_ID,checkEmailSeperate));
     }
 }
 

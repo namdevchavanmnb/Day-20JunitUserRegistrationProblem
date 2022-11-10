@@ -73,6 +73,13 @@ public class UserRegistrationTest {
         Boolean result7 = validation.password4("Ksndkdv67@");
         Assertions.assertEquals(result7, true);
     }
+
+    @Test
+    void given_emailId_should_return_True() {
+        UserValidation validation = new UserValidation();
+        Boolean result8 = validation.checkEmailSeperate("abc@yahoo.com");
+        Assertions.assertEquals(result8, true);
+    }
 }
 
 
