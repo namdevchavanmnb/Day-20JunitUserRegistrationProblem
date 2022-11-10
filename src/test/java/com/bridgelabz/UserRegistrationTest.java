@@ -9,6 +9,10 @@ public class UserRegistrationTest {
         System.out.println("Before Each");
 
     }
+    @AfterEach
+    void inilization(){
+
+    }
     @Test
     void given_first_name_should_returnTrue() {
         UserValidation validation = new UserValidation();
