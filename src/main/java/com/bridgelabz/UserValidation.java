@@ -7,6 +7,9 @@ public class UserValidation {
 
     public boolean checkFirstName(String firstName) {
         return (Pattern.matches(VALIDATE_NAME, firstName));
+    }
 
+    public Boolean checkLastName(String lastName) {
+        return (Pattern.matches(VALIDATE_NAME, lastName));
     }
 }
