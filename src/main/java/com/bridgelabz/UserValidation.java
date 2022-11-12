@@ -44,5 +44,6 @@ public class UserValidation {
     public Boolean checkEmailSeperate(String checkEmailSeperate) {
         return (Pattern.matches(SEPERATE_EMAIL_ID,checkEmailSeperate));
     }
+
 }
 
