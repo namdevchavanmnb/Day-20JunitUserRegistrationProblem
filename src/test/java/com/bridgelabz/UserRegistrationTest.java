@@ -6,7 +6,7 @@ import org.junit.jupiter.api.*;
 public class UserRegistrationTest {
     @BeforeAll
     static void beforeAllTestMsg() {
-        System.out.println("Welcome to User Registration Problem");
+        System.out.println("-----Welcome to User Registration Problem-----");
     }
     @AfterAll
     static void afterAllTestPassedMsg(){
@@ -15,34 +15,34 @@ public class UserRegistrationTest {
 
     @AfterEach
     public void afterEachTestPassMsg() {
-        System.out.println("All Test Case");
+        System.out.println("Happy Test Case");
     }
 
     @Test
     void given_first_name_should_returnTrue() {
         UserValidation validation = new UserValidation();
-        Boolean result = validation.checkFirstName("Namdev");
+        Boolean result = validation.checkFirstName("Aditya");
         Assertions.assertEquals(result, true);
     }
 
     @Test
     void given_last_name_should_returnTrue() {
         UserValidation validation = new UserValidation();
-        Boolean result1 = validation.checkLastName("Chavan");
+        Boolean result1 = validation.checkLastName("Bharti");
         Assertions.assertEquals(result1, true);
     }
 
     @Test
     void given_email_id_should_returnTrue() {
         UserValidation validation = new UserValidation();
-        Boolean result2 = validation.checkemailId("namdevchavanmnb@gmail.com");
+        Boolean result2 = validation.checkemailId("Adityabharti.ab@gmail.com");
         Assertions.assertEquals(result2, true);
     }
 
     @Test
     void given_phoneNumber_should_returnTrue() {
         UserValidation validation = new UserValidation();
-        Boolean result3 = validation.phoneNumber("91 9604411890");
+        Boolean result3 = validation.phoneNumber("91 9812040783");
         Assertions.assertEquals(result3, true);
     }
     @Test
