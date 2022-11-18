@@ -15,7 +15,7 @@ public class UserRegistrationTest {
 
     @AfterEach
     public void afterEachTestPassMsg() {
-        System.out.println("Passed");
+        System.out.println("All Test Case");
     }
 
     @Test
@@ -60,12 +60,12 @@ public class UserRegistrationTest {
     @Test
     void given_password2_should_returnTrue() {
         UserValidation validation = new UserValidation();
-        Boolean result6 = validation.password3("Ksndkdv98");
+        Boolean result6 = validation.password3("Ksndkdv67");
         Assertions.assertEquals(result6, true);
     }  @Test
     void given_password3_should_returnTrue() {
         UserValidation validation = new UserValidation();
-        Boolean result7 = validation.password4("Ksndkdv98@");
+        Boolean result7 = validation.password4("Ksndkdv67@");
         Assertions.assertEquals(result7, true);
     }
     @Test
