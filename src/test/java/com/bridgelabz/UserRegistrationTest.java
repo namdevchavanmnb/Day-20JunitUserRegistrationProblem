@@ -21,21 +21,21 @@ public class UserRegistrationTest {
     @Test
     void given_first_name_should_returnTrue() {
         UserValidation validation = new UserValidation();
-        Boolean result = validation.checkFirstName("Aditya");
+        Boolean result = validation.checkFirstName("Namdev");
         Assertions.assertEquals(result, true);
     }
 
     @Test
     void given_last_name_should_returnTrue() {
         UserValidation validation = new UserValidation();
-        Boolean result1 = validation.checkLastName("Bharti");
+        Boolean result1 = validation.checkLastName("Chavan");
         Assertions.assertEquals(result1, true);
     }
 
     @Test
     void given_email_id_should_returnTrue() {
         UserValidation validation = new UserValidation();
-        Boolean result2 = validation.checkemailId("Adityabharti.ab@gmail.com");
+        Boolean result2 = validation.checkemailId("namdevchavan@gmail.com");
         Assertions.assertEquals(result2, true);
     }
 
